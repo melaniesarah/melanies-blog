@@ -1,10 +1,13 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
 
-<%= link_to 'Back', articles_path %>
+<div class="container">
+	<p>
+	  <strong>Title:</strong>
+	  <%= @article.title %>
+	</p>
+	<p>
+	  <strong>Text:</strong>
+	  <%= @article.text %>
+	</p>
+</div>
+
+<%= link_to 'Back', articles_path, class: "big button"%>
