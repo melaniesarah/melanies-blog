@@ -8,6 +8,19 @@
 	  <%= @article.text %>
 	</p>
 </div>
+<div class ="container">
+  <h2>Comments</h2>
+  <% @article.comments.each do |comment| %>
+    <p>
+      <strong>Commenter:</strong>
+      <%= comment.commenter %>
+    </p>
+    <p>
+      <strong>Comment:</strong>
+      <%= comment.body %>
+    </p>
+  <% end %>
+</div>
 
 <div class="container">
   <h2>Add Comment</h2>
